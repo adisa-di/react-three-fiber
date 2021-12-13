@@ -5,7 +5,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 function Box(props) {
   const mesh = useRef();
   // rotate the box
-  useFrame((state, delta) => {
+  useFrame(() => {
     mesh.current.rotation.x = mesh.current.rotation.y += 0.01
   });
   // draw the box
